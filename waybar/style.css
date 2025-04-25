@@ -1,0 +1,164 @@
+@define-color waybarBg rgba(0, 0, 0, 0.0);
+
+@define-color base rgba(8, 9, 15, 0.99);
+
+@define-color surface rgba(23, 26, 39, 0.99);
+
+@define-color primary rgb(30, 105, 197);
+
+@define-color accent      #80c0ff;
+
+@define-color text        #cdd6f4;
+
+@define-color muted       #7f849c;
+
+@define-color alert       #ff6b6b;
+
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 14px;
+}
+
+window#waybar {
+  background-color: @waybarBg;
+}
+
+#clock {
+  color: @text;
+  background-color: @surface;
+  border-radius: 30px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border: 2px solid @primary;
+}
+
+#clock:hover {
+  background-color: @base;
+}
+
+#workspaces {
+  background-color: @surface;
+  border-radius: 30px;
+  margin-left: 12px;
+  margin-top: 10px;
+}
+
+#workspaces button {
+  padding: 3px 15px;
+  border-radius: 30px;
+}
+
+#workspaces button:hover {
+  background-color: @base;
+  border: none;
+}
+
+#workspaces button.active {
+  background-color: @primary;
+}
+
+#temperature,
+#battery,
+#backlight {
+  color: @text;
+  background-color: @surface;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#temperature:hover,
+#battery:hover,
+#backlight:hover {
+  background-color: @base;
+}
+
+#temperature.critical,
+#battery.critical,
+#backlight.critical {
+  background-color: @alert;
+  color: @text;
+}
+
+#battery {
+  border-radius: 0 30px 30px 0;
+}
+
+#temperature {
+  /* border-radius: 0 10px 10px 0; */
+}
+
+#backlight {
+  border-radius: 30px 0 0 30px;
+  margin-left: 12px;
+}
+
+#cpu,
+#memory,
+#network {
+  margin: 0;
+  background-color: @surface;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#cpu:hover,
+#memory:hover,
+#network:hover {
+  background-color: @base;
+}
+
+#cpu.critical,
+#memory.critical,
+#network.critical {
+  background-color: @alert;
+  color: @text;
+}
+
+#network {
+  border-radius: 30px 0 0 30px;
+  margin-left: 10px;
+}
+
+#memory {
+  border-radius: 0 30px 30px 0;
+}
+
+#pulseaudio {
+  background-color: @surface;
+  padding: 10px;
+  border-radius: 30px;
+  margin-top: 10px;
+}
+
+#pulseaudio:hover {
+  background-color: @base;
+}
+
+#pulseaudio.speaker {
+  border-radius: 30px 0 0 30px;
+  margin-left: 12px;
+}
+
+#pulseaudio.microphone {
+  border-radius: 0 30px 30px 0;
+}
+
+#tray {
+  background-color: @surface;
+  padding: 10px;
+  border-radius: 30px;
+  margin-left: 12px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+#window {
+  background-color: @surface;
+  padding: 10px;
+  border-radius: 30px;
+  margin-top: 10px;
+}
+
+#window:hover {
+  background-color: @base;
+}
