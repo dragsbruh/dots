@@ -22,7 +22,7 @@ window#waybar {
     color: @text;
     background-color: @surface;
     border: 1px solid @primary;
-    border-radius: 50px;
+    border-radius: 8px;
     padding: 0 15px;
     margin-top: 5px;
 }
@@ -34,7 +34,7 @@ window#waybar {
 #workspaces {
     background-color: @surface;
     border-radius: 8px;
-    margin: 10px 0 0 12px;
+    margin: 5px 0 0 10px;
     border: 1px solid @primary;
 }
 
@@ -64,8 +64,8 @@ window#waybar {
 #tray {
     color: @text;
     background-color: @surface;
-    padding: 10px;
-    margin-top: 10px;
+    padding: 0 10px;
+    margin-top: 5px;
 
     border-top: 1px solid @primary;
     border-bottom: 1px solid @primary;
@@ -95,6 +95,7 @@ window#waybar {
 #battery {
     border-radius: 0 8px 8px 0;
     border-right: 1px solid @primary;
+    margin-right: 10px;
 }
 
 #backlight {
@@ -127,6 +128,6 @@ window#waybar {
 
 #tray {
     border-radius: 8px;
-    margin: 10px 10px 0 12px;
+    margin: 10px;
     border: 1px solid @primary;
 }
