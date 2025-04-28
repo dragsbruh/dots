@@ -128,6 +128,7 @@ window#waybar {
 
 #tray {
     border-radius: 8px;
-    margin: 10px;
+    margin-right: 10px;
     border: 1px solid @primary;
+    padding: 0 10px;
 }

@@ -51,11 +51,13 @@
             "", // 40–60%
             "", // 60–80%
             "🔥" // 80–100%
-        ]
+        ],
+        "interval": 3
     },
     "memory": {
         "format": "\uf538 {percentage}%",
-        "format-alt": "\uf538 {used}GiB"
+        "format-alt": "\uf538 {used}GiB",
+        "interval": 3
     },
     "clock": {
         "interval": 1,
