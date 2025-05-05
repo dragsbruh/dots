@@ -1,0 +1,7 @@
+theme = "onedarker"
+
+[editor.cursor-shape]
+insert = "bar"
+
+[keys.normal]
+"backspace" = { s = [":w", ":config-reload"], w = [":w"] }
