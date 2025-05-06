@@ -20,7 +20,7 @@ window#waybar {
     color: @text;
     background-color: @surface;
     border: 1px solid @primary;
-    border-radius: 5px;
+    border-radius: 0px;
     padding: 0 15px;
     margin-top: 5px;
 }
@@ -31,14 +31,14 @@ window#waybar {
 
 #workspaces {
     background-color: @surface;
-    border-radius: 5px;
+    border-radius: 0px;
     margin: 5px 0 0 5px;
     border: 1px solid @primary;
 }
 
 #workspaces button {
     padding: 3px 15px;
-    border-radius: 3px;
+    border-radius: 0px;
 }
 
 #workspaces button:hover {
@@ -91,41 +91,41 @@ window#waybar {
 }
 
 #battery {
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 0px 0px 0;
     border-right: 1px solid @primary;
     margin-right: 10px;
 }
 
 #backlight {
-    border-radius: 5px 0 0 5px;
-    margin-left: 12px;
+    border-radius: 0px 0 0 0px;
+    margin-left: 10px;
     border-left: 1px solid @primary;
 }
 
 #network {
-    border-radius: 5px 0 0 5px;
+    border-radius: 0px 0 0 0px;
     margin-left: 10px;
     border-left: 1px solid @primary;
 }
 
 #memory {
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 0px 0px 0;
     border-right: 1px solid @primary;
 }
 
 #pulseaudio.speaker {
-    border-radius: 5px 0 0 5px;
+    border-radius: 0px 0 0 0px;
     margin-left: 12px;
     border-left: 1px solid @primary;
 }
 
 #pulseaudio.microphone {
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 0px 0px 0;
     border-right: 1px solid @primary;
 }
 
 #tray {
-    border-radius: 5px;
+    border-radius: 0px;
     margin-right: 5px;
     border: 1px solid @primary;
     padding: 0 10px;

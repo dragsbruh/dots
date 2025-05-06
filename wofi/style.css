@@ -2,7 +2,7 @@ window {
     margin: 0px;
     border: 0.5px solid #e2b14f;
     background-color: rgba(18, 17, 15, 0.85);
-    border-radius: 8px;
+    border-radius: 0px;
 }
 
 #input {
@@ -13,7 +13,7 @@ window {
     font-weight: bold;
     background-color:rgb(46, 44, 31);
     outline: none;
-    border-radius: 5px;
+    border-radius: 0px;
 }
 
 #input:focus {
@@ -22,25 +22,25 @@ window {
 }
 
 #inner-box {
-    margin: 0 10px;
+    margin: 0px 10px;
     border: 1px solid #e2b14f;
     color: #c4dcc7;
     font-weight: normal;
     background-color:rgba(14, 10, 4, 0.89);
-    border-radius: 5px;
+    border-radius: 0px;
 }
 
 #outer-box {
     margin: 0px;
     border: none;
-    border-radius: 12px;
+    border-radius: 0px;
     background-color: transparent;
 }
 
 #scroll {
     margin: 5px 0px;
     border: none;
-    border-radius: 10px;
+    border-radius: 0px;
 }
 
 #img {
