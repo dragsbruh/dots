@@ -8,48 +8,47 @@
 @define-color alert   #b28488;
 
 * {
-    font-family: "JetBrains Mono Nerd Font";
-    font-size: 14px;
+  font-family: "JetBrains Mono Nerd Font";
+  font-size: 14px;
 }
 
 window#waybar {
-    background-color: @waybarBg;
+  background-color: @waybarBg;
 }
 
 #clock {
-    color: @text;
-    background-color: @surface;
-    border: 1px solid @primary;
-    border-radius: 0px;
-    padding: 0 15px;
-    margin-top: 5px;
+  color: @text;
+  background-color: @surface;
+  border: 1px solid @primary;
+  border-radius: 0px;
+  padding: 0 15px;
+  margin-top: 5px;
 }
 
 #clock:hover {
-    background-color: @base;
+  background-color: @base;
 }
 
 #workspaces {
-    background-color: @surface;
-    border-radius: 0px;
-    margin: 5px 0 0 5px;
-    border: 1px solid @primary;
+  background-color: @surface;
+  border-radius: 0px;
+  margin: 5px 0 0 5px;
+  border: 1px solid @primary;
 }
 
 #workspaces button {
-    padding: 3px 15px;
-    border-radius: 0px;
+  padding: 3px 15px;
+  border-radius: 0px;
 }
 
 #workspaces button:hover {
-    background-color: @base;
+  background-color: @base;
 }
 
 #workspaces button.active {
-    background-color: @primary;
-    color: @base;
+  background-color: @primary;
+  color: @base;
 }
-
 
 #temperature,
 #battery,
@@ -60,13 +59,13 @@ window#waybar {
 #pulseaudio,
 #window,
 #tray {
-    color: @text;
-    background-color: @surface;
-    padding: 0 10px;
-    margin-top: 5px;
+  color: @text;
+  background-color: @surface;
+  padding: 0 10px;
+  margin-top: 5px;
 
-    border-top: 1px solid @primary;
-    border-bottom: 1px solid @primary;
+  border-top: 1px solid @primary;
+  border-bottom: 1px solid @primary;
 }
 
 #temperature:hover,
@@ -77,7 +76,7 @@ window#waybar {
 #network:hover,
 #pulseaudio:hover,
 #window:hover {
-    background-color: @base;
+  background-color: @base;
 }
 
 #temperature.critical,
@@ -86,47 +85,47 @@ window#waybar {
 #cpu.critical,
 #memory.critical,
 #network.critical {
-    background-color: @alert;
-    color: @text;
+  background-color: @alert;
+  color: @text;
 }
 
 #battery {
-    border-radius: 0 0px 0px 0;
-    border-right: 1px solid @primary;
-    margin-right: 10px;
+  border-radius: 0 0px 0px 0;
+  border-right: 1px solid @primary;
+  margin-right: 10px;
 }
 
 #backlight {
-    border-radius: 0px 0 0 0px;
-    margin-left: 10px;
-    border-left: 1px solid @primary;
+  border-radius: 0px 0 0 0px;
+  margin-left: 10px;
+  border-left: 1px solid @primary;
 }
 
 #network {
-    border-radius: 0px 0 0 0px;
-    margin-left: 10px;
-    border-left: 1px solid @primary;
+  border-radius: 0px 0 0 0px;
+  margin-left: 10px;
+  border-left: 1px solid @primary;
 }
 
 #memory {
-    border-radius: 0 0px 0px 0;
-    border-right: 1px solid @primary;
+  border-radius: 0 0px 0px 0;
+  border-right: 1px solid @primary;
 }
 
 #pulseaudio.speaker {
-    border-radius: 0px 0 0 0px;
-    margin-left: 12px;
-    border-left: 1px solid @primary;
+  border-radius: 0px 0 0 0px;
+  margin-left: 12px;
+  border-left: 1px solid @primary;
 }
 
 #pulseaudio.microphone {
-    border-radius: 0 0px 0px 0;
-    border-right: 1px solid @primary;
+  border-radius: 0 0px 0px 0;
+  border-right: 1px solid @primary;
 }
 
 #tray {
-    border-radius: 0px;
-    margin-right: 5px;
-    border: 1px solid @primary;
-    padding: 0 10px;
+  border-radius: 0px;
+  margin-right: 5px;
+  border: 1px solid @primary;
+  padding: 0 10px;
 }

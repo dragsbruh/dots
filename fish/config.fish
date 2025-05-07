@@ -24,14 +24,13 @@ if status is-interactive
         # and if forget the command contains `git clone`
         # and type `git clone <paste>`
         # which resolves to `git clone git clone <url>`
-    if test (count $argv) -ge 3
-        if test "$argv[1]" = "clone" ; and test "$argv[2]" = "git"
-            set argv $argv[1] $argv[3..-1]
+        if test (count $argv) -ge 3
+            if test "$argv[1]" = clone; and test "$argv[2]" = git
+                set argv $argv[1] $argv[3..-1]
+            end
         end
+        command git $argv
     end
-    command git $argv
-end
-
 
     function code
         /usr/bin/code --enable-features=UseOzonePlatform --ozone-platform=wayland $argv >/dev/null 2>&1 &
