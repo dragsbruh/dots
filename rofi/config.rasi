@@ -1,5 +1,5 @@
 * {
-    font: "JetBrainsMono Nerd Font 11";
+    font: "JetBrains Nerd Font 11";
 
     foreground:                  rgba(226, 177, 79, 100%);
     normal-foreground:           @foreground;

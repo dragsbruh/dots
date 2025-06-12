@@ -9,6 +9,7 @@ if status is-interactive
     set -gx PATH $HOME/.duckdb/cli/latest $PATH
     set -gx PATH $HOME/.local/bin $PATH
     set -gx PATH $HOME/.spicetify $PATH
+    set -gx PATH /home/linuxbrew/.linuxbrew/bin $PATH
 
     abbr ls exa
     abbr ll "exa -la"
@@ -17,6 +18,10 @@ if status is-interactive
     abbr cinny "$HOME/tools/cinny/cinny.AppImage"
     abbr anytype "$HOME/tools/anytype/anytype.AppImage"
     abbr obsidian "$HOME/tools/obsidian/obsidian.AppImage"
+
+    function vencord_update
+        sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"
+    end
 
     function git
         # the fact that i need this utility is embarassing
@@ -166,6 +171,17 @@ if status is-interactive
 
         # Play file using mpv
         mpv --audio-device=pulse::SoundBoard $argv
+    end
+
+    function airpodsup
+        bluetoothctl connect 4C:B9:10:6D:71:5A
+        sleep 3
+        pactl set-default-sink bluez_output.4C_B9_10_6D_71_5A.1
+    end
+
+    function airpodsdown
+        pactl set-default-sink alsa_output.pci-0000_00_1f.3-platform-skl_hda_dsp_generic.HiFi__Speaker__sink
+        bluetoothctl disconnect 4C:B9:10:6D:71:5A
     end
 
     /usr/bin/pfetch
