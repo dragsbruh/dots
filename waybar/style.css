@@ -3,7 +3,7 @@
 @define-color base rgba(31, 40, 46, 0.8);
 @define-color surface rgba(24, 31, 32, 0.8);
 
-@define-color primary #e2b14f;
+@define-color primary #9AB8F5;
 @define-color text    #c4dcc7;
 @define-color alert   #b28488;
 
@@ -20,7 +20,7 @@ window#waybar {
   color: @text;
   background-color: @surface;
   border: 1px solid @primary;
-  border-radius: 0px;
+  border-radius: 10px;
   padding: 0 15px;
   margin-top: 5px;
 }
@@ -31,14 +31,14 @@ window#waybar {
 
 #workspaces {
   background-color: @surface;
-  border-radius: 0px;
+  border-radius: 10px;
   margin: 5px 0 0 5px;
   border: 1px solid @primary;
 }
 
 #workspaces button {
   padding: 3px 15px;
-  border-radius: 0px;
+  border-radius: 10px;
 }
 
 #workspaces button:hover {
@@ -90,41 +90,41 @@ window#waybar {
 }
 
 #battery {
-  border-radius: 0 0px 0px 0;
+  border-radius: 0 10px 10px 0;
   border-right: 1px solid @primary;
   margin-right: 10px;
 }
 
 #backlight {
-  border-radius: 0px 0 0 0px;
+  border-radius: 10px 0 0 10px;
   margin-left: 10px;
   border-left: 1px solid @primary;
 }
 
 #network {
-  border-radius: 0px 0 0 0px;
+  border-radius: 10px 0 0 10px;
   margin-left: 10px;
   border-left: 1px solid @primary;
 }
 
 #memory {
-  border-radius: 0 0px 0px 0;
+  border-radius: 0 10px 10px 0;
   border-right: 1px solid @primary;
 }
 
 #pulseaudio.speaker {
-  border-radius: 0px 0 0 0px;
+  border-radius: 10px 0 0 10px;
   margin-left: 12px;
   border-left: 1px solid @primary;
 }
 
 #pulseaudio.microphone {
-  border-radius: 0 0px 0px 0;
+  border-radius: 0 10px 10px 0;
   border-right: 1px solid @primary;
 }
 
 #tray {
-  border-radius: 0px;
+  border-radius: 10px;
   margin-right: 5px;
   border: 1px solid @primary;
   padding: 0 10px;
