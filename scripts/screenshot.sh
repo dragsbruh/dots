@@ -1,7 +1,8 @@
 #!/bin/bash
 
 USE_SWAPPY=false
-PLAIN_SAVE_PATH=$(date +"screenshot-%Y%m%d-%H%M%S.png")
+TAKE_FULLSCREEN=false
+PLAIN_SAVE_PATH="/home/dragsbruh/Pictures/screenshots/$(date +"screenshot-%Y%m%d-%H%M%S.png")"
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
@@ -9,11 +10,21 @@ while [[ $# -gt 0 ]]; do
       USE_SWAPPY=true
       shift
       ;;
+    --fullscreen)
+      TAKE_FULLSCREEN=true
+      shift
+      ;;
     *)
+      shift
+      ;;
   esac
 done
 
-grim -g "$(slurp)" - | tee "$PLAIN_SAVE_PATH" | wl-copy --type image/png
+if [[ "$TAKE_FULLSCREEN" == true ]]; then
+  grim - | tee "$PLAIN_SAVE_PATH" | wl-copy --type image/png
+else
+  grim -g "$(slurp)" - | tee "$PLAIN_SAVE_PATH" | wl-copy --type image/png
+fi
 
 if [ "$USE_SWAPPY" = true ]; then
   swappy -f "$PLAIN_SAVE_PATH"
