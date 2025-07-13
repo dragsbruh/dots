@@ -4,7 +4,7 @@ foreground = "#c4dcc7"
 
 # Font settings 
 font-family = "FiraCode Nerd Font Mono"
-font-size = 15.0
+font-size = 12.0
 
 # Transparency
 background-opacity = 0.8

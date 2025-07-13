@@ -188,3 +188,4 @@ if status is-interactive
 end
 
 fish_add_path /home/dragsbruh/.spicetify
+nvm use latest >> /dev/null
