@@ -8,3 +8,8 @@ font-size = 12.0
 
 # Transparency
 background-opacity = 0.8
+
+window-theme = system
+gtk-titlebar = false
+gtk-wide-tabs = false
+gtk-adwaita = false
