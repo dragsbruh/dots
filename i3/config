@@ -193,9 +193,11 @@ bar {
 
 bindsym Print exec --no-startup-id flameshot gui --clipboard -p ~/Pictures/screenshots
 bindsym $mod+Print exec --no-startup-id flameshot full -p ~/Pictures/Screenshots --clipboard
+bindsym $mod+Shift+p exec --no-startup-id bash -c "xcolor | xclip -selection clipboard"
 
-exec_always --no-startup-id ~/.dotfiles/scripts/i3hacks.sh
-exec_always --no-startup-id ~/.dotfiles/scripts/rowal.sh
+exec --no-startup-id ~/.dotfiles/scripts/i3hacks.sh
+exec --no-startup-id ~/.dotfiles/scripts/rowal.sh
 
-exec_always --no-startup-id picom --daemon --no-frame-pacing
-exec_always --no-startup-id flameshot
+exec --no-startup-id picom --daemon --no-frame-pacing
+exec --no-startup-id flameshot
+exec --no-startup-id dunst
