@@ -19,6 +19,9 @@ if status is-interactive
     abbr anytype "$HOME/tools/anytype/anytype.AppImage"
     abbr obsidian "$HOME/tools/obsidian/obsidian.AppImage"
 
+    zoxide init fish | source
+    alias cd z
+
     function vencord_update
         sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"
     end
@@ -35,11 +38,6 @@ if status is-interactive
             end
         end
         command git $argv
-    end
-
-    function code
-        /usr/bin/code --enable-features=UseOzonePlatform --ozone-platform=wayland $argv >/dev/null 2>&1 &
-        disown
     end
 
     function reload
