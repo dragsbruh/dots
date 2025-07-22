@@ -210,6 +210,11 @@ set $volumepath ~/tools/i3-volume
 set $statuscmd i3status
 set $statussig SIGUSR1
 set $volumestep 5
+
 bindsym XF86AudioRaiseVolume exec --no-startup-id $volumepath/volume -n -t $statuscmd -u $statussig up $volumestep
 bindsym XF86AudioLowerVolume exec --no-startup-id $volumepath/volume -n -t $statuscmd -u $statussig down $volumestep
 bindsym XF86AudioMute        exec --no-startup-id $volumepath/volume -n -t $statuscmd -u $statussig mute
+
+bindsym $mod+XF86AudioPlay exec --no-startup-id mpc toggle
+bindsym $mod+XF86AudioNext exec --no-startup-id mpc next
+bindsym $mod+XF86AudioPrev exec --no-startup-id mpc prev
