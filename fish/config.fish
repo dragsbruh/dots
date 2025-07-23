@@ -19,8 +19,11 @@ if status is-interactive
     abbr anytype "$HOME/tools/anytype/anytype.AppImage"
     abbr obsidian "$HOME/tools/obsidian/obsidian.AppImage"
 
-    zoxide init fish | source
-    alias cd z
+    # i think ill come around to zoxide later
+    # zoxide init fish | source
+    # alias cd z
+
+    starship init fish | source
 
     function vencord_update
         sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"
