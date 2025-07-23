@@ -24,6 +24,7 @@ if status is-interactive
     # alias cd z
 
     starship init fish | source
+    enable_transience
 
     function vencord_update
         sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"
