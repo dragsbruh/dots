@@ -26,6 +26,8 @@ if status is-interactive
     starship init fish | source
     enable_transience
 
+    task --completion fish | source
+
     function vencord_update
         sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"
     end
