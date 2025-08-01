@@ -18,7 +18,7 @@ if status is-interactive
     abbr cinny "$HOME/tools/cinny/cinny.AppImage"
     abbr anytype "$HOME/tools/anytype/anytype.AppImage"
     abbr obsidian "$HOME/tools/obsidian/obsidian.AppImage"
-
+    
     # i think ill come around to zoxide later
     # zoxide init fish | source
     # alias cd z
