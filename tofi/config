@@ -1,6 +1,6 @@
 anchor = top
 width = 100%
-height = 20
+height = 16
 horizontal = true
 font-size = 10
 prompt-text = " run: "
@@ -14,3 +14,4 @@ padding-top = 0
 padding-bottom = 0
 padding-left = 0
 padding-right = 0
+selection-color = #33ccff
