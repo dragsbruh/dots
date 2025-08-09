@@ -1,3 +1,5 @@
+config-file = ?/home/dragsbruh/.config/ghostty/themes/wallust.conf
+
 # Basic Colors
 background = "#0f1210"
 foreground = "#c4dcc7"
