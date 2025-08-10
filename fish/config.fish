@@ -18,6 +18,7 @@ if status is-interactive
     abbr cinny "$HOME/tools/cinny/cinny.AppImage"
     abbr anytype "$HOME/tools/anytype/anytype.AppImage"
     abbr obsidian "$HOME/tools/obsidian/obsidian.AppImage"
+    abbr mpc "mpc -h ~/.mpd/socket"
     
     # i think ill come around to zoxide later
     # zoxide init fish | source
