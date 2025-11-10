@@ -15,3 +15,4 @@ if status is-interactive
 end
 
 source '/home/dragsbruh/.opam/opam-init/init.fish'
+set -Ux PATH /home/dragsbruh/go/bin/ $PATH
